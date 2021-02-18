@@ -17,9 +17,13 @@ function renderWeather(weatherArray) {
     const feels_like = Math.round(weatherArray.main.feels_like);
     const condition = weatherArray.weather[0].main;
         return `
-        <div class="card-title">Weather In: Houston
-        <div class="condition">Condition: ${condition}</div>
+        <br>
+        <div class="card-title text-center pt-3">Weather In: Houston
+        <br>
+        <div class="condition"><br>Condition: ${condition}</div>
+        <br>
         <div class="temp">Temperature: ${temp} F</div>
+        <br>
         <div class="feels_like">Feels Like: ${feels_like} F</div>
         </div>
     `;
