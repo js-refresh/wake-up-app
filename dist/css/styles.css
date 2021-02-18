@@ -20456,7 +20456,7 @@ body {
     bottom: 0;
     background-color: rgba(0, 97, 242, 0.9);
   }
-  .card-portfolio:hover .card-img-top {
+  .card-portfolio:hover .card-img-top { 
     transform: scale(1.2);
   }
 }
