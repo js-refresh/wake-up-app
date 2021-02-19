@@ -17,14 +17,15 @@ function renderWeather(weatherArray) {
     const feels_like = Math.round(weatherArray.main.feels_like);
     const condition = weatherArray.weather[0].main;
         return `
+        <a style="background-size: 100% ; background-position: center; background-image: url('./assets/img/backgrounds/daniel-ramirez-q4TfWtnz_xw-unsplash.jpg')" id="weather" class="card card-portfolio weather h-100" href="#!"</a>
+        <br> 
+        <div class= "weathertxt bg-none card-title text-center pt-3">Weather In: Houston
         <br>
-        <div class="card-title text-center pt-3">Weather In: Houston
+        <div class="bg-none condition"><br>Condition: ${condition}</div>
         <br>
-        <div class="condition"><br>Condition: ${condition}</div>
+        <div class="bg-none temp">Temperature: ${temp} F</div>
         <br>
-        <div class="temp">Temperature: ${temp} F</div>
-        <br>
-        <div class="feels_like">Feels Like: ${feels_like} F</div>
+        <div class="bg-none feels_like">Feels Like: ${feels_like} F</div>
         </div>
     `;
 }
