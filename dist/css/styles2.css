@@ -1,0 +1,30 @@
+.navbar-brand{
+    color:#E85A4f !important;
+    
+    
+}
+.container-fluid {
+    background-color:#EAE7DC !important;
+}
+.navbar{
+    background-color: #EAE7DC;
+}
+
+#round{
+
+    color: #EAE7DC !important;
+}
+
+.theWeather {
+    background-image: url("../assets/img/backgrounds/daniel-ramirez-q4TfWtnz_xw-unsplash.jpg");
+    
+}
+.weathertxt{
+    color:#E85A4f;
+    font-size: 125%;
+
+}
+
+a{
+    text-decoration: none !important;
+}
