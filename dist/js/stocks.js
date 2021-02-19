@@ -5,7 +5,7 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
     let applePriceData = data.AAPL.values;
     let applePrices = [];
     let appleDates = [];
-    for (let i = 5; i > 0; i--) {
+    for (let i = 4; i >= 0; i--) {
         applePrices.push(parseInt(applePriceData[i].open))
         appleDates.push(applePriceData[i].datetime)
     }
@@ -13,7 +13,7 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
     let msftPriceData = data.MSFT.values;
     let msftPrices = [];
     let msftDates = [];
-    for (let i = 5; i > 0; i--) {
+    for (let i = 4; i >= 0; i--) {
         msftPrices.push(parseInt(msftPriceData[i].open))
         msftDates.push(msftPriceData[i].datetime)
     }
@@ -21,7 +21,7 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
     let teslaPriceData = data.TSLA.values;
     let teslaPrices = [];
     let teslaDates = [];
-    for (let i = 5; i > 0; i--) {
+    for (let i = 4; i >= 0; i--) {
         teslaPrices.push(parseInt(teslaPriceData[i].open))
         teslaDates.push(teslaPriceData[i].datetime)
     }
@@ -66,11 +66,11 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
                 label: ['Apple'],
                 data: applePrices,
                 borderColor: [
-                    'rgba(15, 206, 27, 1)', 
-                    'rgba(15, 206, 27, 1)',
-                    'rgba(15, 206, 27, 1)',
-                    'rgba(15, 206, 27, 1)',
-                    'rgba(15, 206, 27, 1)'
+                    'rgba(187, 36, 13, 1)', 
+                    'rgba(187, 36, 13, 1)',
+                    'rgba(187, 36, 13, 1)',
+                    'rgba(187, 36, 13, 1)',
+                    'rgba(187, 36, 13, 1)'
                 ],
                 borderWidth: 1
             }]
