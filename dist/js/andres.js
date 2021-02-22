@@ -17,7 +17,8 @@ function renderWeather(weatherArray) {
     const feels_like = Math.round(weatherArray.main.feels_like);
     const condition = weatherArray.weather[0].main;
         return `
-        <a style="background-size: 100% ; background-position: center; background-image: url('./assets/img/backgrounds/daniel-ramirez-q4TfWtnz_xw-unsplash.jpg')" id="weather" class="card card-portfolio weather h-100" href="#!"</a>
+        <div style="background-size: 100% ; background-position: center; background-image: url('./assets/img/backgrounds/weatherimg.jpeg')" id="weather" class="card card-portfolio weather h-100 w-100">
+        
         <br> 
         <div class= "weathertxt bg-none card-title text-center pt-3">Weather In: Houston
         <br>
