@@ -1,15 +1,18 @@
 .centered   {
     position: relative;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
+    text-shadow:2px 2px black;
 }
 
 .motivate-text {
     position: absolute;
+    font-size: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+    
+}
 
 @media (max-width: 575.98px) {
     .motivate-text {
@@ -25,10 +28,10 @@
 
 .progress {
     display: flex;
-    height: 3rem;
+    height: 4rem;
     overflow: hidden;
     line-height: 0;
     font-size: 0.75rem;
-    background-color: #e0e5ec;
+    background-color: #161616;
     border-radius: 0.35rem;
-  }
+}
