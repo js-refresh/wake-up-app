@@ -132,7 +132,6 @@
                                         </div>
                                     </a>
                                 </div>
-                                </div>
                                 <div class="col-md-6 mb-5">
                                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
@@ -157,20 +156,20 @@
                                         <h5 class="small font-weight-500"><strong>Project Progress:</strong></h5>
 
                                         <br>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python Project</div>
+                                        <div class="progress" id="parentBar1">
+                                            <div class="progress-bar progress-bar-striped bg-success" id="childBar1" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python Project</div>
                                         </div>
                                         <br>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Front-End Project</div>
+                                        <div class="progress" id="parentBar2">
+                                            <div class="progress-bar progress-bar-striped bg-info" id="childBar2" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Front-End Project</div>
                                         </div>
                                         <br>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Back-End Project</div>
+                                        <div class="progress" id="parentBar3">
+                                            <div class="progress-bar progress-bar-striped bg-warning" id="childBar3" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Back-End Project</div>
                                         </div>
                                         <br>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Full Stack Project</div>
+                                        <div class="progress" id="parentBar4">
+                                            <div class="progress-bar progress-bar-striped bg-danger" id="childBar4" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Full Stack Project</div>
                                         </div>
                                         <br>  
                                     </a>
@@ -239,6 +238,7 @@
     <script src="js/stocks.js"></script>
     <script src="js/motivation.js"></script>
     <script src="js/andres.js"></script>
+    <script src="progress.js"></script>
 </body>
 
 </html>
