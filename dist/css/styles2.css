@@ -1,6 +1,7 @@
 .navbar-brand{
     color: rgb(194,106,19) !important;
     font-size: 45px !important;
+    margin-right: 20% ;
     
 }
 .container-fluid {
@@ -27,7 +28,9 @@ a{
     text-decoration: none !important;
 }
 .page-header{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    background-position: center 70%;
+    font-size: ;
 }
 .page-header-title{
     color: rgb(255, 254, 254) !important;
@@ -36,6 +39,8 @@ a{
 .page-header-text{
     color: rgb(255, 255, 255) !important;
     text-shadow: 3px 3px rgb(0, 0, 0);
+    margin-top: 10%;
+    font-weight: bolder !important;
 }
 
 #layoutDefault{
@@ -84,4 +89,12 @@ a{
     text-align: center;
     margin-top: 5px;
     text-decoration: aqua !important;
+}
+.lead-text{
+    color: white;
+    text-shadow: 1px 1px orange;
+}
+.bottomtxt{
+    color: white;
+    text-shadow: 1px 1px orange;
 }
