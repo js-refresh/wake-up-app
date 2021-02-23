@@ -1,5 +1,4 @@
 function saveProgressBar(goal) {
-    console.log(goal.text())
     let goalArray = goal.text().split(':')   
     let goalsList = localStorage.getItem('goalsList')
     let goalsListJSON = JSON.parse(goalsList)
@@ -11,10 +10,44 @@ function saveProgressBar(goal) {
 
     goalsList = JSON.stringify(goalsListJSON)
     localStorage.setItem('goalsList', goalsList)
-
-
-
 }
+
+$(function() {
+    let goalsList = localStorage.getItem('goalsList')
+    let goalsListJSON = JSON.parse(goalsList);
+
+    let $pythonPerc = $('#pythonPerc')
+    let $fePerc = $('#fePerc')
+    let $bePerc = $('#bePerc')
+    let $fsPerc = $('#fsPerc')
+
+    let $pythonTitle = $('#pythonTitle')
+    let $feTitle = $('#feTitle')
+    let $beTitle = $('#beTitle')
+    let $fsTitle = $('#fsTitle')
+
+    let percObj = {}
+
+    percObj[$pythonTitle.text()] = $pythonPerc
+    percObj[$feTitle.text()] = $fePerc 
+    percObj[$beTitle.text()] = $bePerc
+    percObj[$fsTitle.text()] = $fsPerc
+
+
+    for (let i = 0; i < Object.keys(percObj).length; i++) {
+        currValue = Object.keys(percObj)[i]
+        const child = $(`#childBar${i+1}`)
+
+        if (goalsListJSON[currValue]) {
+            percObj[currValue].text((goalsListJSON[currValue]))
+            child.width(goalsListJSON[currValue])
+        }
+    }
+
+    
+})
+
+
 
 
 
@@ -34,3 +67,27 @@ parentBars.on('click', function(e) {
     saveProgressBar(child)
 })
 
+    // let goalsKeys = Object.keys(goalsListJSON);
+    // let goalsValues = Object.values(goalsListJSON)
+    // let goalsArray = $('.progress-bar')
+    // for (let i = 0; i < goalsArray.length; i++) {
+    //     let item = goalsArray[i]
+    //     let finalString = goalsKeys[i] + goalsValues[i];
+    //     item.innerHTML = finalString
+        
+    // }
+
+    
+
+    // console.log(titleText)
+    // $.map(goalsListJSON, currentGoal => {
+    //     console.log(currentGoal)
+    //     let finalText = titleText[0] + ': ' + currentGoal
+    //     console.log(finalText)
+    //     ?.text(finalText)
+    // })
+
+// need to check width of each bar with local data and render
+// how do i change inner text of each element upon rednering?
+// i can get both pieces of data
+// just have no way of rendering in the correct order (in relation to html and local data)
