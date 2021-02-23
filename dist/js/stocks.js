@@ -35,7 +35,7 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
                 label: 'Microsoft',
                 data: msftPrices,
                 borderColor: [ 
-                    'rgba(0, 140, 255, 1)',
+                    'rgba(194,106,19, 1)',
                     'rgba(0, 140, 255, 1)',
                     'rgba(0, 140, 255, 1)',
                     'rgba(0, 140, 255, 1)',
@@ -66,11 +66,12 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
                 label: ['Apple'],
                 data: applePrices,
                 borderColor: [
-                    'rgba(187, 36, 13, 1)', 
-                    'rgba(187, 36, 13, 1)',
-                    'rgba(187, 36, 13, 1)',
-                    'rgba(187, 36, 13, 1)',
-                    'rgba(187, 36, 13, 1)'
+                    'rgba(255, 0, 0, 1)', 
+                    'rgba(0, 140, 255, 1)',
+                    'rgba(0, 140, 255, 1)',
+                    'rgba(0, 140, 255, 1)',
+                    'rgba(0, 140, 255, 1)',
+                    
                 ],
                 borderWidth: 1
             }]
@@ -95,7 +96,7 @@ $.get("https://api.twelvedata.com/time_series?symbol=AAPL,MSFT,TSLA&interval=1we
                 label: ['Tesla'],
                 data: teslaPrices,
                 borderColor: [
-                    'rgba(15, 206, 27, 1)', 
+                    'rgb(0, 207, 213, 1)', 
                     'rgba(15, 206, 27, 1)',
                     'rgba(15, 206, 27, 1)',
                     'rgba(15, 206, 27, 1)',
