@@ -187,12 +187,12 @@ sup {
 }
 
 a {
-  color: #0061f2;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #0042a6;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -217,8 +217,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  -ms-overflow-style: scrollbar;
-}
+  -ms-overflow-style: scrollbar;}
 
 figure {
   margin: 0 0 1rem;
@@ -3026,24 +3025,24 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0061f2;
-  border-color: #0061f2;
+  background-color: #f75a00;
+  border-color: #000000;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0052cc;
-  border-color: #004dbf;
+  background-color: #000000;
+  border-color: #ff6600;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #0052cc;
-  border-color: #004dbf;
-  box-shadow: 0 0 0 0.2rem rgba(38, 121, 244, 0.5);
+  background-color: #ff7b00;
+  border-color: #000000;
+  
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #0061f2;
-  border-color: #0061f2;
+  background-color: #ffffff;
+  border-color: #000000;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -9364,7 +9363,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #212832 !important;
+  background-color: #2c2c2c  !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -18067,7 +18066,7 @@ button.bg-danger-soft:focus {
 }
 
 .text-primary {
-  color: #0061f2 !important;
+  color: orange !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -18123,7 +18122,7 @@ a.text-light:hover, .page-header-dark a.btn-link:hover, a.text-light:focus, .pag
 }
 
 .text-dark, .page-header-light .btn-link {
-  color: #212832 !important;
+  color: #2c2c2c !important;
 }
 
 a.text-dark:hover, .page-header-light a.btn-link:hover, a.text-dark:focus, .page-header-light a.btn-link:focus {
@@ -18650,10 +18649,6 @@ body {
   bottom: 0;
   background-color: #000;
   opacity: 0.5;
-}
-
-.overlay-primary:before {
-  background-color: #0061f2 !important;
 }
 
 .overlay-secondary:before {
@@ -20350,7 +20345,7 @@ body {
     background-color: rgba(0, 97, 242, 0.9);
   }
   .card-portfolio:hover .card-img-top { 
-    transform: scale(1.2);
+    transform: scale(1.0);
   }
 }
 
